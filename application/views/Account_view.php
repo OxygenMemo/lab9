@@ -6,12 +6,16 @@
 	<th>DateOp</th>
 	<th>Balance</th>
 </tr>
+<?php 
+foreach ($account as $row ){
+?>
 <tr>
-	<td>ACC001</td>
-	<td>wittawas</td>
-	<td>Kanprapun</td>
-	<td>2018-03-20 08:04:58</td>
-	<td>16036</td>
+	<td><?= $row['ACC_No'] ?></td>
+	<td><?= $row['ACC_Name'] ?></td>
+	<td><?= $row['ACC_No'] ?></td>
+	<td><?= $row['ACC_DateOp'] ?></td>
+	<td><?= $row['Balance'] ?></td>
 </tr>
+<?php } ?>
 </table>
 

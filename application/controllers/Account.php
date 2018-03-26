@@ -6,5 +6,7 @@ class Account extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('Account_view');
+		$data['account'] = $this->Account_modul->list_all_account();
+		$this->load->view('Account_view',$data);
 	}
 }
